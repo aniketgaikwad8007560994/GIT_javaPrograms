@@ -1,0 +1,24 @@
+package Java.Exampls;
+
+class Student3{
+	
+	int id;
+	String name;
+	
+	void display() {
+		System.out.println(id+" " +name);}
+
+	}
+	
+
+public class Default_ConstructorTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Student3 s=new Student3();
+		
+		s.display();
+		
+
+	}
