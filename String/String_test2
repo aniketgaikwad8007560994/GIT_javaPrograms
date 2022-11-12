@@ -1,0 +1,53 @@
+package Java.Exampls;
+
+public class String_Test2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 String testString="  in java Sring is an Object";
+		 
+	        System.out.println("length of above String is= "+  testString.length());
+
+
+	        String[] words= testString.split( " ");
+	        System.out.println("above String total Words is : " +words.length );
+	        int i=0;
+	        for(String word:words) {
+	        	i++;
+	        	System.out.println(word);
+	        	
+	        	
+	        	
+	        	 if(testString.contains("z"))
+	                 System.out.println("String is avaiable");
+	             else
+	                 System.out.println("String is not available");
+	        	 
+	        	 System.out.println(testString.toUpperCase());
+	        	 System.out.println(testString.toLowerCase());
+	        	 
+	        	  System.out.println("the char at index no. 3 : "+testString.charAt(1));
+	              System.out.println("the char at index no. 2 : "+testString.charAt(2));
+	              
+	              
+	              System.out.println("index of char 'J' is: "+testString.indexOf('j'));
+	              
+	              System.out.println("String after substring:");
+	              
+	              System.out.println(testString.substring(4));
+	              System.out.println(testString.substring(4,11));
+	              
+	              System.out.println(testString.isEmpty());//output=false 
+	              
+	              String test="";
+	              System.out.println(test.isEmpty());//if string is empty it returns true else it returns false
+	            
+
+	            
+
+	        }
+	        		
+	}
+	}
+
+
