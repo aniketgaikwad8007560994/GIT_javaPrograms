@@ -1,0 +1,75 @@
+package Java.Exampls;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class String_Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str="Aniket";
+		ArrayList<String>list=new ArrayList<>();
+		list.add("Aman");
+		list.add("Mayur");
+		list.add("Prathmesh");
+		list.add("Aniket");
+		
+	for(String i:list) {
+			if (i.equals(str)) {
+				System.out.println("Aniket is present");
+			}
+		}   // By Using For each loop 
+		
+		for(int i=0;i<list.size();i++) {
+			
+		
+			
+			if(list.equals(str))
+				throw new NullPointerException("Exception is handled");
+			else 
+					System.out.println("Aniket is Present");//Solve Using by Throw Exception Handling 
+				
+			
+	//Different example
+		
+		String s1="Wellcome";
+		String s2="Wellcome";//By String literal
+		
+		String s3=new String("Wellcome");
+		String s4=new String ("wellcome");//By New keyword
+		
+		 if(s1==s2) {
+			System.out.println("Both  Strings are Same ");
+		}
+		else {
+			System.out.println("Both Strings are not same");
+		}
+		
+		if (s1==s3) {
+			System.out.println("Both Strings are Same ");
+			
+		}
+		else {
+			System.out.println("Both Strings are not same");
+		}
+		
+		
+		if(s1.equals(s4)) {
+			
+		
+		System.out.println("Both Strings are same  ");
+		}
+		else {
+			System.out.println("Both String Are Not Same ");
+		}    //By Using  The equals() Method we check the String Are same or not. 
+		
+		if (s1.equalsIgnoreCase(s4)) {
+			System.out.println("Both Strings Are Same");
+		}
+		else {
+			System.out.println("Both Strings Are not Same ");
+		}    //By Using eualsIngnoreCase() we check the Strings Are same or not 
+		}}
+		
+	
