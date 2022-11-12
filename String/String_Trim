@@ -1,0 +1,36 @@
+package Java.Exampls;
+import java.util.Scanner;
+
+
+public class Strin_Trim_test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter Username ");
+		String username=sc.nextLine();
+		
+		System.out.println("Enter the Password ");
+		String Password=sc.nextLine();
+		
+		System.out.println("Length of username is " +username.length());
+		System.out.println("Length of Password is "  +Password.length());
+		
+		if (username.trim().equalsIgnoreCase("java") && Password.trim().equalsIgnoreCase("abc123")) {
+			
+			System.out.println("login");}
+			else {
+				System.out.println("invalid user..");
+			}
+		
+		
+			
+		}
+		
+		
+
+	}
+
+
